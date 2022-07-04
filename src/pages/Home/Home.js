@@ -1,4 +1,6 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+import Resume from '../../Images/Resume .pdf';
 import './Home.css';
 
 export const Home = () => {
@@ -10,8 +12,8 @@ export const Home = () => {
                 <p className='homep'>building responsive optimized sites.</p>
             </div>
             <div className='btngroup'>
-               <button><a href='/'><p>Portfolio</p></a></button>
-                <button><a href='/'><p>resume</p></a></button>
+               <button><Link smooth to="#projects"> Projects</Link></button>
+                <button><a href={Resume} rel="noreferrer" target="_blank">resume</a></button>
               </div>
             <button className='contactbtn'>Get in touch</button>
           </div>

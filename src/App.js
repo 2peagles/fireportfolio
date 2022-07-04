@@ -1,8 +1,10 @@
 import React  from 'react';
 import { Home } from './pages/Home/Home';
-import { Portfolio } from './pages/Portfolio/Portfolio';
+import { Projects } from './pages/Projects/Projects';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+// import type { Engine } from "tsparticles-engine";
+// import { loadFirePreset } from "tsparticles-preset-fire";
 import './App.css';
 
 function App () {
@@ -26,9 +28,7 @@ function App () {
         loaded={particlesLoaded}
         options={{
           background: {
-            color: {
-              value: "#0d47a1",
-            },
+            image:"radial-gradient(#4a0000, #000)"
           },
           fpsLimit: 120,
           interactivity: {
@@ -38,7 +38,7 @@ function App () {
                 mode: "push",
               },
               onHover: {
-                enable: true,
+                enable: false,
                 mode: "repulse",
               },
               resize: true,
@@ -55,17 +55,18 @@ function App () {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: ["#fdcf58", "#757676","#f27d0c", "800909", "#f07f13"]
             },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
+            preset: "fire",
+            // links: {
+            //   color: "#ffffff",
+            //   distance: 150,
+            //   enable: true,
+            //   opacity: 0.5,
+            //   width: 1,
+            // },
             collisions: {
-              enable: true,
+              enable: false,
             },
             move: {
               direction: "none",
@@ -74,7 +75,7 @@ function App () {
                 default: "bounce",
               },
               random: false,
-              speed: 6,
+              speed: 4,
               straight: false,
             },
             number: {
@@ -98,7 +99,7 @@ function App () {
         }}
       />
       <Home/>
-      <Portfolio/>
+      <Projects/>
     </div>
   );
 }
