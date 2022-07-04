@@ -19,7 +19,7 @@ export const Nav = () => {
                          </a>
                     </li>
                     <li>
-                        <a class="link dim black dib br-100 h2 w2 mr3 pa2 bg-near-white ba b--black-10" href="/Contact" target="_blank">
+                        <a href="/Contact" target="_blank">
                             <GrContact/>
                         </a>
                     </li> 

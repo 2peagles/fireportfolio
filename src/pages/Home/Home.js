@@ -1,6 +1,8 @@
-import React from 'react';
+import React  from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Resume from '../../Images/Resume .pdf';
+// import {GrContact} from 'react-icons/gr';
+// import { Popup } from '../../componets/Contact/InnerPopup';
 import './Home.css';
 
 export const Home = () => {
@@ -15,8 +17,10 @@ export const Home = () => {
                <button><Link smooth to="#projects"> Projects</Link></button>
                 <button><a href={Resume} rel="noreferrer" target="_blank">resume</a></button>
               </div>
-            <button className='contactbtn'>Get in touch</button>
+            {/* <button className='contactbtn'>Get in touch</button> */}
           </div>
+          {/* <GrContact onClick={() => setButtonPopup(true)} className='contacticon' />
+       <Popup trigger={buttonPopup} setTigger={setButtonPopup}></Popup> */}
     </div>
   )
 }

@@ -3,8 +3,6 @@ import { Home } from './pages/Home/Home';
 import { Projects } from './pages/Projects/Projects';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-// import type { Engine } from "tsparticles-engine";
-// import { loadFirePreset } from "tsparticles-preset-fire";
 import './App.css';
 
 function App () {
