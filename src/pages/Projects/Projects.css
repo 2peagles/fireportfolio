@@ -17,9 +17,10 @@
     min-height:550px;
     display: flex;
     display: inline-block;
-    border:2px solid white;
+    border:5px solid white;
     background-color: rgba(0,0,0,0.4);
 }
+/* 2border && || 0.8  */
 img{
     height:200px;
 }

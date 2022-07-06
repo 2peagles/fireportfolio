@@ -1,4 +1,5 @@
 import React  from 'react';
+// import { Nav } from './componets/Nav/Nav';
 import { Home } from './pages/Home/Home';
 import { Projects } from './pages/Projects/Projects';
 import Particles from "react-tsparticles";
@@ -96,6 +97,7 @@ function App () {
           detectRetina: true,
         }}
       />
+      {/* <Nav/> */}
       <Home/>
       <Projects/>
     </div>
