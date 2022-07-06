@@ -14,9 +14,10 @@ import './Nav.css';
 export const Nav = () => {
     const [navbar, setNavbar] = useState(false);
     const handleClick = ()=> setNavbar(!navbar);
+    
     const [buttonPopup, setButtonPopup] =useState(false);
     return(
-            <div>
+            <div className='nav'>
                 {/* <ol className='navol'>
                     <li className='navicons'><Link smooth to="#home"><FaHome/></Link></li>
                     <li className='navicons'>

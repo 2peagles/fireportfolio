@@ -14,11 +14,12 @@ a{
     display: none;
 }
 .mobilenav{
-/* position: absolute; */
+position: absolute;
 top:0;
-left:0;
+right:0;
 background-color: black;
 }
+
  @media screen and (max-width:700px) and (max-height:950px) {
   .mobilemenu{
     display: block;
@@ -28,8 +29,8 @@ background-color: black;
  }
 
  /* FOLD PHONE */
- @media screen and (max-width:500px) and (max-height:750px) {
-    .navol {
-            display: none;
-        }
- }
+ /* @media screen and (max-width:500px) and (max-height:750px) {
+  .navbar{
+    display: block;
+  }
+ } */

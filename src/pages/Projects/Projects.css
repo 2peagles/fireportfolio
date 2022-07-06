@@ -1,14 +1,13 @@
 #projects {
     color: white;
     min-height: 100vh;
-    min-height: 100%;
     width:100%;
     display: flex;
     position:absolute;
+    position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: 100vh;
 }
 .projectcontainer{
     margin:10px;
