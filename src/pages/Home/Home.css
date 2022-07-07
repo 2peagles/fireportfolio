@@ -89,5 +89,3 @@ button{
         font-size: calc(30px + 6 * ((100vw - 320px) / 680));
     }
 }
-
-

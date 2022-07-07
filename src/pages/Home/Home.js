@@ -1,8 +1,6 @@
-import React  from 'react';
+import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Resume from '../../Images/Resume .pdf';
-// import {GrContact} from 'react-icons/gr';
-// import { Popup } from '../../componets/Contact/InnerPopup';
 import './Home.css';
 
 export const Home = () => {

@@ -46,23 +46,44 @@ svg{
   background-color: #833e3e;
 }
  @media screen and (max-width:700px) and (max-height:950px) {
-.sidebar{
-  top:0;
-  left: 0;
-  width:100%;
-}
-  .sideicons{
-  width:130px;
-  padding:5px 10px 5px 20px;
-}
-
+.sideicons {
+    width: 130px;
+    padding: 5px 10px 5px 20px;
+  }
   svg{
     font-size: 30px;
   }
  }
-
+.mobilemenu{
+  color:white;
+  z-index: 10;
+  display: none;
+}
+ .mobilecontent{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:10;
+  display: none;
+ }
+ .mobileicon{
+  color:white;
+  display: flex;
+ /* display: block; */
+ align-items: center;
+ justify-content: center;
+ display: none;
+ }
+ .mobileicons{
+  color:white;
+    display: flex;
+      /* display: block; */
+      align-items: center;
+      justify-content: center;
+      display: none;
+ }
  /* FOLD PHONE */
- /* @media screen and (max-width:500px) and (max-height:750px) {
+ @media screen and (max-width:500px) and (max-height:750px) {
 .sideicons {
     width: 130px;
     padding: 5px 10px 5px 20px;
@@ -71,4 +92,11 @@ svg{
   svg {
     font-size: 30px;
   }
- } */
+  .mobilemenu{
+    display: block;
+    color:white;
+  }
+  .mobilecontent{
+    display: block;
+  }
+ }
