@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
-// import { GoLogoGithub } from 'react-icons/go';
 import smartbrain from '../../Images/smartbrain.png';
+import { GoLogoGithub } from 'react-icons/go';
 // import { HashLink as Link } from 'react-router-hash-link';
 
 export const Projects = () => {
@@ -9,7 +9,8 @@ export const Projects = () => {
     <div id='projects'>
       <div className='projectsdiv'>
         {/* <Link smooth to="#home"> Projects</Link> */}
-        <div className='projectcontainer'>
+        <div className='projectcontainer parent'>
+          <div className=' ribbon'><a href="https://github.com/2peagles" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo'/></a></div>
           <div className='projectcontentcontainer'>
             <img src={smartbrain} alt=" Face Recognition App Login Page" />
              <h1>Smart Brain</h1>
@@ -32,8 +33,9 @@ export const Projects = () => {
                   <button className='projectbtn'><a href='/' className='gitrepo'><GoLogoGithub /></a></button> */}
              </div>
         </div>
-        <div className='projectcontainer'>
+        <div className='projectcontainer parent'>
           <div className='projectcontentcontainer'>
+            <div className=' ribbon'><a href="https://github.com/2peagles" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <img src={smartbrain} alt=" Face Recognition App Login Page" />
             <h1>Smart Brain</h1>
             <p><b> FULL STACKED REACT APP </b>
@@ -55,8 +57,9 @@ export const Projects = () => {
             <button className='projectbtn'><a href='/' className='gitrepo'><GoLogoGithub /></a></button> */}
           </div>
         </div>
-        <div className='projectcontainer'>
-          <div className='projectcontentcontainer'>
+        <div className='projectcontainer parent'>
+          <div className='projectcontentcontainer '>
+            <div className=' ribbon'><a href="https://github.com/2peagles" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <img src={smartbrain} alt=" Face Recognition App Login Page" />
             <h1>Smart Brain</h1>
             <p><b> FULL STACKED REACT APP </b>

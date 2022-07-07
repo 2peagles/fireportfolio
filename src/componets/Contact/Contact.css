@@ -1,0 +1,32 @@
+form{
+    color:black;
+    padding-bottom:50px;
+}
+label{
+    display: block;
+    font-weight: 500;
+    font-size: xlarge;
+    padding:5px 10px;
+    text-transform: uppercase;
+}
+input{
+    width:50%;
+    margin:0.7rem;
+    padding:5px;
+    border-radius: .4rem;
+}
+input:focus{
+    color:white;
+    background-color: rgba(0,0,0,0.5);
+}
+input::placeholder{
+  padding-left:10px;
+}
+
+/* FOLD PHONE */
+@media screen and (max-width:500px) and (max-height:750px) {
+    input {
+        width: 75%;
+      
+    }
+}

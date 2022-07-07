@@ -1,13 +1,13 @@
-import React,{useState, useEffect} from 'react';
-import { Nav } from '../Nav/Nav';
+import React, { useState, useEffect } from 'react';
+import { Contact } from '../Contact/Contact';
 export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
-   useEffect(  ()=> {
-    window.addEventListener (( )=>{
-      if(window.scrollY > 100){
-        setShowNavbar(true);
+   useEffect(( )=> {
+    window.addEventListener ('scroll', () =>{
+      if (window.scrollY > 100) {
+        setShowNavbar('true');
       } else {
-        setShowNavbar(false);
+        setShowNavbar('false');
       }
     })
   }, [ ] );
@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <div>
       {showNavbar && (
-        <Nav />
+        <Contact />
       )}
     </div>
   )
