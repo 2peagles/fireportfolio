@@ -1,8 +1,9 @@
-import { BsGithub, BsMenuAppFill } from 'react-icons/bs'
-import { FaHome, FaTimes } from 'react-icons/fa'
-import { RiFilePaper2Fill } from 'react-icons/ri'
+import { BsGithub} from 'react-icons/bs';
+import { BiMenu } from 'react-icons/bi';
+import { FaHome, FaTimes } from 'react-icons/fa';
+import { RiFilePaper2Fill } from 'react-icons/ri';
 // import CgWorkAlt from 'react-icons/cg'
-import { GrLinkedin } from 'react-icons/gr'
+import { GrLinkedin } from 'react-icons/gr';
 // import{ GrContact } from 'react-icons/gr'
 import React, {useState} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
@@ -63,7 +64,7 @@ export const Nav = () => {
             </div>
 
             <div onClick={handleClick} className='mobilemenu'>
-                {!menu ? <BsMenuAppFill /> : <FaTimes/> }
+                {!menu ? <BiMenu  className='menu'/> : <FaTimes className='ex-menu'/> }
             </div>
 
                 <ul className={!menu ? 'hidden' : 'mobilecontent'}>
