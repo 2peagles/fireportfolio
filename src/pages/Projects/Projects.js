@@ -35,7 +35,7 @@ export const Projects = () => {
         </div>
         <div className='projectcontainer parent'>
           <div className='projectcontentcontainer'>
-            <div className=' ribbon'><a href="https://github.com/2peagles" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
+            <div className=' ribbon'><a href="https://github.com/2peagles/PeaglePups" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <img src={peagles} alt=' Two Peagle Puppies'/> 
             <h1> SHowcasing</h1>
             <p><b>Front end react app. </b>
