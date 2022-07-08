@@ -8,6 +8,7 @@ ul{
   top:35%;
   left:0;
   z-index:2;
+  /* display: none; */
 }
 .sideicons{
   margin-left:-110px;
@@ -46,25 +47,27 @@ svg{
   background-color: #833e3e;
 }
  @media screen and (max-width:700px) and (max-height:950px) {
-.sideicons {
+/* .sideicons {
     width: 130px;
     padding: 5px 10px 5px 20px;
   }
   svg{
     font-size: 30px;
+  } */
+  .sideicons{
+    display: none;
   }
  }
+ 
 .mobilemenu{
   color:white;
-  z-index: 10;
-  display: none;
+  z-index: 3;
 }
  .mobilecontent{
   position:absolute;
   top:0;
   left:0;
-  z-index:10;
-  display: none;
+  /* z-index:10; */
  }
  .mobileicon{
   color:white;
@@ -72,7 +75,7 @@ svg{
  /* display: block; */
  align-items: center;
  justify-content: center;
- display: none;
+ /* display: none; */
  }
  .mobileicons{
   color:white;
@@ -80,7 +83,7 @@ svg{
       /* display: block; */
       align-items: center;
       justify-content: center;
-      display: none;
+      /* display: none; */
  }
  /* FOLD PHONE */
  @media screen and (max-width:500px) and (max-height:750px) {
@@ -98,5 +101,8 @@ svg{
   }
   .mobilecontent{
     display: block;
+  }
+  .sidebar{
+    display: none;
   }
  }

@@ -12,7 +12,7 @@ import Resume from '../../Images/Resume .pdf';
 import './Nav.css';
 
 export const Nav = () => {
-    // const [buttonPopup, setButtonPopup] =useState(false);
+    // const [buttonPopup, setButtonPopup] = useState(false);
     const[menu, setMenu] = useState(false);
     const handleClick =()=>setMenu(!menu);
     return(
@@ -66,7 +66,7 @@ export const Nav = () => {
                 {!menu ? <BsMenuAppFill /> : <FaTimes/> }
             </div>
 
-                <ul className={!menu ? 'none' : 'mobilecontent'}>
+                <ul className={!menu ? 'hidden' : 'mobilecontent'}>
                     <li className='mobileicon'>
                         <Link
                             onClick={handleClick}
