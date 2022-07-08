@@ -1,63 +1,46 @@
 import React from 'react';
 import './Contact.css';
-export default class Contact extends React.Component {
-  state = {
-    name:null,
-    email:null,
-    phone:null,
-    message:null
-  }
-
-  eventHandler( event ) {
-    this.setState( { [ event.target.name ]: event.target.value})
-  }
-
-  handleSubmit (event){
-    event.preventDefault();
-  }
-  render ( ){
+export default function Contact () {
   return (
-    <form>
+    <form action="https://getform.io/f/88c578b9-2c0d-4849-bbef-669ebdde076f" method="POST">
       <h1>Get In Touch</h1>
         <label>Name</label>
-         name: <input 
+       <input 
         type='text' 
         name='name' 
         placeholder='Name'
-         onChange={this.eventHandler}/>
-      <div>
+        />
+      {/* <div>
         <label>Phone</label>
-       phone: <input 
+       <input 
         type='numbers' 
-        name='phone-number' 
+        name='number' 
         placeholder='Phone-Number'
         maxLength={12}
-          onChange={this.eventHandler} />
-      </div>
+         />
+      </div> */}
       <div>
         <label>Email</label>
-        email: <input 
+        <input 
           type='text' 
-          name='email-address' 
+          name='email' 
           placeholder='Email'
-          onChange={this.eventHandler} />
+         />
       </div>
       <div>
         <label>Message</label>
-       message:  <input
+        <input
          type='text' 
-         name='textbox' 
+         name='message' 
          placeholder='Message'
          maxLength={200}
-         onChange={this.eventHandler}
         />
       </div>
       <div>
-        <button type='submit' onClick={this.handleSubmit}>
-          Submit
+        <button type='submit'>
+          Send
         </button>
       </div>
      </form>
     )
   }
-}

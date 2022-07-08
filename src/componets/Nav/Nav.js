@@ -4,16 +4,16 @@ import { FaHome, FaTimes } from 'react-icons/fa';
 import { RiFilePaper2Fill } from 'react-icons/ri';
 // import CgWorkAlt from 'react-icons/cg'
 import { GrLinkedin } from 'react-icons/gr';
-// import{ GrContact } from 'react-icons/gr'
+import{ GrContact } from 'react-icons/gr'
 import React, {useState} from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Resume from '../../Images/Resume .pdf';
-// import { Popup } from '../Contact/Popup';
-// import Contact from  '../Contact/Contact';
+import { Popup } from '../Contact/Popup';
+import Contact from  '../Contact/Contact';
 import './Nav.css';
 
 export const Nav = () => {
-    // const [buttonPopup, setButtonPopup] = useState(false);
+    const [buttonPopup, setButtonPopup] = useState(false);
     const[menu, setMenu] = useState(false);
     const handleClick =()=>setMenu(!menu);
     return(
@@ -45,12 +45,14 @@ export const Nav = () => {
                          LINKEDIN <GrLinkedin />
                         </a>
                     </li>
-                    {/* <li className='sideicons contact'>
-                    <button onClick={() => setButtonPopup(true)} className='sideicon'> <GrContact /></button>
+                    <li className='sideicons contact'>
+                    <button onClick={() => setButtonPopup(true)} className='sideicon contact'> 
+                        Contact <GrContact className='contacticon'/>
+                    </button>
                     <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
                         <Contact />
                     </Popup>
-                    </li> */}
+                    </li>
                     <li className='sideicons resume'>
                     <a 
                         href={Resume}
@@ -62,7 +64,7 @@ export const Nav = () => {
                     </li>
                 </ul>
             </div>
-
+<div className='navbar'>
             <div onClick={handleClick} className='mobilemenu'>
                 {!menu ? <BiMenu  className='menu'/> : <FaTimes className='ex-menu'/> }
             </div>
@@ -104,6 +106,7 @@ export const Nav = () => {
                         </a>
                     </li>
                 </ul>
+            </div>
             </>
     );
 }
