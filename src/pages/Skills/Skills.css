@@ -1,0 +1,15 @@
+#skills{
+    height: 100vh;
+    width: 100vw;
+    color:white;
+    position: absolute;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skillcontainer li{
+    display:inline-block;
+    margin:0px 30px;
+}

@@ -5,6 +5,7 @@ import { Projects } from './pages/Projects/Projects';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import './App.css';
+import { Skills } from './pages/Skills/Skills';
 
 function App () {
   const particlesInit = async (main) => {
@@ -21,6 +22,8 @@ function App () {
   };
   return (
     <div className="App">
+        <Nav/>
+        <div className='tscontainer'>
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -29,6 +32,9 @@ function App () {
           background: {
             image:"radial-gradient(#4a0000, #000)"
           },
+          // fullScreen:{
+          //   enable:false
+          // },
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -97,9 +103,10 @@ function App () {
           detectRetina: true,
         }}
       />
-      <Nav/>
-      <Home/>
+      <Home className='yourdiv'/>
+      </div>
       <Projects/>
+      <Skills/>
     </div>
   );
 }

@@ -1,11 +1,19 @@
-/* App{
-position: absolute;
+#tscontainer{
+  position: relative;
 }
 #tsparticles{
-  position: relative;
+  position: absolute;
   top:0;
   left:0;
-  right:0;
   bottom:0;
-  z-index:-1;
-} */
+  right:0;
+  padding:0;
+  margin:0;
+  z-index: 0;
+}
+#your-div{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}

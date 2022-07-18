@@ -2,6 +2,7 @@ import { BsGithub} from 'react-icons/bs';
 import { BiMenu } from 'react-icons/bi';
 import { FaHome, FaTimes } from 'react-icons/fa';
 import { RiFilePaper2Fill } from 'react-icons/ri';
+import { BiLibrary } from 'react-icons/bi';
 // import CgWorkAlt from 'react-icons/cg'
 import { GrLinkedin } from 'react-icons/gr';
 import{ GrContact } from 'react-icons/gr'
@@ -11,6 +12,8 @@ import Resume from '../../Images/Resume .pdf';
 import { Popup } from '../Contact/Popup';
 import Contact from  '../Contact/Contact';
 import './Nav.css';
+import { IconContext } from "react-icons";
+
 
 export const Nav = () => {
     const [buttonPopup, setButtonPopup] = useState(false);
@@ -18,6 +21,7 @@ export const Nav = () => {
     const handleClick =()=>setMenu(!menu);
     return(
         <> 
+        <IconContext.Provider value={{ color: "white", className: "" }}>
             <div className='sidebar'>
                 <ul className={!menu ? 'hidden' : 'mobilecontent'}> 
                     <li className='sideicons home'>
@@ -25,6 +29,13 @@ export const Nav = () => {
                              smooth to="#home"
                              className='sideicon'>
                        HOME <FaHome />
+                    </Link>
+                    </li>
+                    <li className='sideicons skills'>
+                        <Link 
+                             smooth to="#skills"
+                             className='sideicon'>
+                       SKILLS <BiLibrary />
                     </Link>
                     </li>
                     <li className='sideicons github'>
@@ -46,11 +57,11 @@ export const Nav = () => {
                         </a>
                     </li>
                     <li className='sideicons contact'>
-                    <button onClick={() => setButtonPopup(true)} className='sideicon contact'> 
-                        Contact <GrContact className='contacticon'/>
-                    </button>
+                    <div onClick={() => setButtonPopup(true)} className='sideicon '> 
+                        Contact <GrContact className='contacticon' stroke="white"/>
+                    </div>
                     <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                        <Contact />
+                        <Contact  />
                     </Popup>
                     </li>
                     <li className='sideicons resume'>
@@ -64,6 +75,7 @@ export const Nav = () => {
                     </li>
                 </ul>
             </div>
+            </IconContext.Provider>
 <div className='navbar'>
             <div onClick={handleClick} className='mobilemenu'>
                 {!menu ? <BiMenu  className='menu'/> : <FaTimes className='ex-menu'/> }

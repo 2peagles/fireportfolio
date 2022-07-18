@@ -2,6 +2,7 @@ import React from 'react';
 import { GoLogoGithub } from 'react-icons/go';
 import smartbrain from '../../Images/smartbrain.png';
 import peagles from '../../Images/peagles.png';
+import ecom from '../../Images/ecom.png'
 import './Projects.css';
 
 export const Projects = () => {
@@ -17,18 +18,25 @@ export const Projects = () => {
                 <p><b> FULL STACKED REACT APP </b> 
                  Takes images and detects faces, using claraifi api. 
                  has a secure login! 
-                  </p>
-                   <ol>
+                 {/* <ol>
                      <li>react (framework)</li>
                      <li>node.js/express (server)</li>
                      <li>postgres (database)</li>
                     <li>heroku (cloud source )</li>
-                   </ol>
+                   </ol> */}
+                  </p>
+                   {/* <ol>
+                     <li>react (framework)</li>
+                     <li>node.js/express (server)</li>
+                     <li>postgres (database)</li>
+                    <li>heroku (cloud source )</li>
+                   </ol> */}
                    <p className='testheading'><b>TEST IT OUT YOURSELF </b></p>
                   <ol>
                     <li className='test'> gmail: test@gmail.com </li>
                      <li className='test'> password:123</li>
                 </ol>
+                <button className='liveview'> <a href='/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
                   {/* <button className=' projectbtn livebtn'>Live view</button>
                   <button className='projectbtn'><a href='/' className='gitrepo'><GoLogoGithub /></a></button> */}
              </div>
@@ -43,19 +51,20 @@ export const Projects = () => {
                to show them the process and the litters.
             </p>
             <ol>
-              <li>react (framework)</li>
+              <li>react </li>
               <li>react tspartticles</li>
               <li>tacyhons  </li>
               <li>bootstrap</li>
             </ol>
+            <button className='liveview'> <a href='/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
             {/* <button className=' projectbtn livebtn'>Live view</button>
             <button className='projectbtn'><a href='/' className='gitrepo'><GoLogoGithub /></a></button> */}
           </div>
         </div>
-        {/* <div className='projectcontainer parent'>
+        <div className='projectcontainer parent'>
           <div className='projectcontentcontainer '>
-            <div className=' ribbon'><a href="https://github.com/2peagles" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
-            <img src={smartbrain} alt=" Face Recognition App Login Page" />
+            <div className=' ribbon'><a href="https://github.com/2peagles/materials" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
+            <img src={ecom} alt=" Face Recognition App Login Page" />
             <h1>Smart Brain</h1>
             <p><b> FULL STACKED REACT APP </b>
               Takes images and detects faces, using claraifi api.
@@ -63,17 +72,13 @@ export const Projects = () => {
             </p>
             <ol>
               <li>react (framework)</li>
-              <li>node.js/express (server)</li>
-              <li>postgres (database)</li>
-              <li>heroku (cloud source )</li>
+              <li>Material UI</li>
+              <li></li>
+              <li>Netlify</li>
             </ol>
-            <p className='testheading'><b>TEST IT OUT YOURSELF </b></p>
-            <ol>
-              <li className='test'> gmail: test@gmail.com </li>
-              <li className='test'> password:123</li>
-            </ol>
+           <button className='liveview'> <a href='https://62d323e7a9a7384c553358c6--resilient-dolphin-e1c9c0.netlify.app/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   )
