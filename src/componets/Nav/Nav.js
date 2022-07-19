@@ -1,29 +1,23 @@
-import { BsGithub} from 'react-icons/bs';
-import { BiMenu } from 'react-icons/bi';
+import React, {useState} from 'react';
+import { BsGithub } from 'react-icons/bs';
+import { BiMenu, BiLibrary} from 'react-icons/bi';
 import { FaHome, FaTimes } from 'react-icons/fa';
 import { RiFilePaper2Fill } from 'react-icons/ri';
-import { BiLibrary } from 'react-icons/bi';
-// import CgWorkAlt from 'react-icons/cg'
 import { GrLinkedin } from 'react-icons/gr';
-import{ GrContact } from 'react-icons/gr'
-import React, {useState} from 'react';
+import { IconContext } from "react-icons";
 import { HashLink as Link } from 'react-router-hash-link';
 import Resume from '../../Images/Resume .pdf';
-import { Popup } from '../Contact/Popup';
-import Contact from  '../Contact/Contact';
 import './Nav.css';
-import { IconContext } from "react-icons";
 
 
 export const Nav = () => {
-    const [buttonPopup, setButtonPopup] = useState(false);
     const[menu, setMenu] = useState(false);
     const handleClick =()=>setMenu(!menu);
     return(
         <> 
         <IconContext.Provider value={{ color: "white", className: "" }}>
             <div className='sidebar'>
-                <ul className={!menu ? 'hidden' : 'mobilecontent'}> 
+                <ul > 
                     <li className='sideicons home'>
                         <Link 
                              smooth to="#home"
@@ -49,20 +43,12 @@ export const Nav = () => {
                     </li>
                     <li className='sideicons linkedin'>
                         <a
-                        href="h/"
+                        href="https://www.linkedin.com/in/precious-bey-b31177220/"
                         target="_blank"
                         rel="noreferrer"
                         className='sideicon'>
                          LINKEDIN <GrLinkedin />
                         </a>
-                    </li>
-                    <li className='sideicons contact'>
-                    <div onClick={() => setButtonPopup(true)} className='sideicon '> 
-                        Contact <GrContact className='contacticon' stroke="white"/>
-                    </div>
-                    <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                        <Contact  />
-                    </Popup>
                     </li>
                     <li className='sideicons resume'>
                     <a 
@@ -76,12 +62,12 @@ export const Nav = () => {
                 </ul>
             </div>
             </IconContext.Provider>
-<div className='navbar'>
             <div onClick={handleClick} className='mobilemenu'>
-                {!menu ? <BiMenu  className='menu'/> : <FaTimes className='ex-menu'/> }
+                {!menu ? <BiMenu  /> : <FaTimes /> }
             </div>
 
                 <ul className={!menu ? 'hidden' : 'mobilecontent'}>
+                    <ul>
                     <li className='mobileicon'>
                         <Link
                             onClick={handleClick}
@@ -89,6 +75,20 @@ export const Nav = () => {
                             className='mobileicons'>
                             HOME
                         </Link>
+                    </li>
+                    <li className='mobileicon'>
+                        <Link 
+                             smooth to="#projects"
+                             className='mobileicons'>
+                       PROJECTS
+                    </Link>
+                    </li>
+                    <li className='mobileicon'>
+                        <Link 
+                             smooth to="#skills"
+                             className='mobileicons'>
+                       SKILLS 
+                    </Link>
                     </li>
                     <li className='mobileicon'>
                         <a
@@ -101,7 +101,7 @@ export const Nav = () => {
                     </li>
                     <li className='mobileicon'>
                         <a
-                            href="h/"
+                            href="https://www.linkedin.com/in/precious-bey-b31177220/"
                             target="_blank"
                             rel="noreferrer"
                             className='mobileicons'>
@@ -117,8 +117,8 @@ export const Nav = () => {
                             RESUME
                         </a>
                     </li>
+                    </ul>
                 </ul>
-            </div>
             </>
     );
 }

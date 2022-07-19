@@ -22,7 +22,28 @@ input:focus{
 input::placeholder{
   padding-left:10px;
 }
-
+.top-btn-position{
+    position:fixed;
+    bottom:7%;
+    right:5%;
+    z-index: 2;
+}
+.top-btn-style{
+    height:30px;
+    width:30px;
+    color:#007D7D;
+    cursor: pointer;
+    background-color: transparent;
+}
+/* .top-btn-style:hover{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    border: 2px solid pink;
+    background-color: pink;
+    color:white;
+    cursor: pointer;
+} */
 /* FOLD PHONE */
 @media screen and (max-width:500px) and (max-height:750px) {
     input {

@@ -2,16 +2,20 @@
     width: 100%;
     height:100vh;
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     color:#fff;
 }
 #home,
 button {
     text-transform: uppercase;
+}
+#homecontainer{
+    /* position: absolute; */
+    z-index: 2;
 }
 .homeheader{
     font-size: 5rem;

@@ -6,6 +6,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import './App.css';
 import { Skills } from './pages/Skills/Skills';
+import { Chatbox } from './componets/Contact/Chatbox';
 
 function App () {
   const particlesInit = async (main) => {
@@ -23,6 +24,7 @@ function App () {
   return (
     <div className="App">
         <Nav/>
+        <Chatbox />
         <div className='tscontainer'>
       <Particles
         id="tsparticles"

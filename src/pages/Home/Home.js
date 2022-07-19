@@ -15,10 +15,7 @@ export const Home = () => {
                <button><Link smooth to="#projects"> Projects</Link></button>
                 <button><a href={Resume} rel="noreferrer" target="_blank">resume</a></button>
               </div>
-            {/* <button className='contactbtn'>Get in touch</button> */}
           </div>
-          {/* <GrContact onClick={() => setButtonPopup(true)} className='contacticon' />
-       <Popup trigger={buttonPopup} setTigger={setButtonPopup}></Popup> */}
     </div>
   )
 }

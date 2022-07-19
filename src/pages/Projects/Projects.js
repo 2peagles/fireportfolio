@@ -45,8 +45,8 @@ export const Projects = () => {
           <div className='projectcontentcontainer'>
             <div className=' ribbon'><a href="https://github.com/2peagles/PeaglePups" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <img src={peagles} alt=' Two Peagle Puppies'/> 
-            <h1> SHowcasing</h1>
-            <p><b>Front end react app. </b>
+            <h1> Showcasing</h1>
+            <p><b>FRONT END REACT APP </b>
               Built for me, I breed dogs and needed a site for clients,
                to show them the process and the litters.
             </p>
@@ -56,7 +56,7 @@ export const Projects = () => {
               <li>tacyhons  </li>
               <li>bootstrap</li>
             </ol>
-            <button className='liveview'> <a href='/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
+            <button className='liveview'> <a href='https://2peagles.github.io/PeaglePups/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
             {/* <button className=' projectbtn livebtn'>Live view</button>
             <button className='projectbtn'><a href='/' className='gitrepo'><GoLogoGithub /></a></button> */}
           </div>
@@ -66,9 +66,10 @@ export const Projects = () => {
             <div className=' ribbon'><a href="https://github.com/2peagles/materials" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <img src={ecom} alt=" Face Recognition App Login Page" />
             <h1>Smart Brain</h1>
-            <p><b> FULL STACKED REACT APP </b>
-              Takes images and detects faces, using claraifi api.
-              has a secure login!
+            <p><b> FRONT END REACT APP </b>
+              Static Eccomerce app, with bright colors. 
+              made with material ui, with commerce.js 
+              and stripe ready to be installed.
             </p>
             <ol>
               <li>react (framework)</li>

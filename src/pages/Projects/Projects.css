@@ -20,8 +20,9 @@
     display: flex;
     display: inline-block;
     border:5px solid white;
-    background-color: #608ade;
-    box-shadow: 5px 10px rgba(96, 138, 222, 0.3);
+    background-color: rgb(0, 125, 125);
+    /* background-color: #608ade; */
+    box-shadow: 5px 10px 5px rgba(0,125,125, 0.3);
     /* background-color: black; */
     /* background-color: rgba(0,0,0,0.4); */
 }
@@ -53,8 +54,13 @@ li{
     display: flex;
     align-items: left;
     justify-content: left;
+    /* box-shadow: 5px 10px ; */
  }
 
+ .liveview:hover{
+
+    box-shadow: 5px 10px ;
+ }
 .parent:hover .ribbon{
     visibility: visible;
 }
