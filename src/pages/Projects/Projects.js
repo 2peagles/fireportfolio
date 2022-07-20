@@ -64,8 +64,8 @@ export const Projects = () => {
         <div className='projectcontainer parent'>
           <div className='projectcontentcontainer '>
             <div className=' ribbon'><a href="https://github.com/2peagles/materials" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
-            <img src={ecom} alt=" Face Recognition App Login Page" />
-            <h1>Smart Brain</h1>
+            <img src={ecom} alt=" Eccomerce Login Page" />
+            <h1> Eccomerce</h1>
             <p><b> FRONT END REACT APP </b>
               Static Eccomerce app, with bright colors. 
               made with material ui, with commerce.js 
@@ -74,8 +74,6 @@ export const Projects = () => {
             <ol>
               <li>react (framework)</li>
               <li>Material UI</li>
-              <li></li>
-              <li>Netlify</li>
             </ol>
            <button className='liveview'> <a href='https://62d323e7a9a7384c553358c6--resilient-dolphin-e1c9c0.netlify.app/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
           </div>
