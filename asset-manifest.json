@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.ce1f3f45.css",
+    "main.js": "/my-app/static/js/main.66b29417.js",
+    "static/media/peagles.png": "/my-app/static/media/peagles.61acc686cd2832f78c97.png",
+    "static/media/ecom.png": "/my-app/static/media/ecom.4fb6759b546789a4a2b2.png",
+    "static/media/smartbrain.png": "/my-app/static/media/smartbrain.564ff8ea9ed6aedc684e.png",
+    "static/media/Resume .pdf": "/my-app/static/media/Resume .3a293a00196cf54f5b9a.pdf",
+    "index.html": "/my-app/index.html",
+    "main.ce1f3f45.css.map": "/my-app/static/css/main.ce1f3f45.css.map",
+    "main.66b29417.js.map": "/my-app/static/js/main.66b29417.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce1f3f45.css",
+    "static/js/main.66b29417.js"
+  ]
+}
