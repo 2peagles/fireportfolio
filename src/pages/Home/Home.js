@@ -8,7 +8,7 @@ export const Home = () => {
     <div id='home'>
         <div id='homecontainer'> 
             <div className='homecontentcontainer'>
-                <h1 className='homeheader'>full stacked developer</h1>
+                <h1 className='homeheader'>front end developer</h1>
                 <p className='homep'>building responsive optimized sites.</p>
             </div>
             <div className='btngroup'>

@@ -65,6 +65,9 @@ svg{
   position: fixed;
   display: none;
   z-index:10;
+  width:100%;
+  /* background-color: #000; */
+  background-color: rgba(74, 0, 0, 0.8);
 }
 .hidden{
   display: none;
@@ -79,13 +82,20 @@ svg{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  /* background-color: black; */
+  background-color: rgba(74, 0, 0,0.9);
 }
- .mobilecontent .mobileicon .mobileicons{
+.mobilecontent .mobileicon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .mobileicon .mobileicons{
     z-index: 11;
     color:white;
     margin:5px 10px;
     font-size: 42px;
+    display: block;
 }
 
  @media screen and (max-width:700px) and (max-height:950px) {

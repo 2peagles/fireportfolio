@@ -36,7 +36,7 @@ export const Skills = () => {
       </IconContext.Provider>
       <IconContext.Provider value={{ color: "white", className: "skillicons", size:'70' }}>
          <ul className='mobile-skills-container'>
-            <ul>
+            <ul className='mobileul'>
                 <li>
                     <BsGithub  />  
                 </li>

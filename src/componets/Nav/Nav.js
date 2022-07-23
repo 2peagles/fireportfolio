@@ -67,7 +67,7 @@ export const Nav = () => {
             </div>
 
                 <ul className={!menu ? 'hidden' : 'mobilecontent'}>
-                    <ul>
+                    <ul className='mobilenav'>
                     <li className='mobileicon'>
                         <Link
                             onClick={handleClick}
