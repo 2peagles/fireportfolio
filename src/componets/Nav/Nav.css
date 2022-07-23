@@ -5,10 +5,9 @@ ul{
 .sidebar{
   position: fixed;
   display: flex;
-  top:35%;
+  top:25%;
   left:0;
   z-index:2;
-  /* display: none; */
 }
 .sideicons{
   margin-left:-110px;
@@ -20,9 +19,15 @@ ul{
   align-items: center;
   text-transform: uppercase;
   justify-content: space-between;
-  /* background-color: rgb(3, 60, 61) */
 }
-.sideicons:hover{
+.sideiconsbackgroundchange{
+    margin-left: -110px;
+      width: 160px;
+      height: 60px;
+      padding: 10px 20px;
+    background-color: rgba(0, 125, 125, 0.9);
+}
+.sideicons:hover, .sideiconsbackgroundchange:hover{
   margin-left:-10px;
 }
 .sideicon{
@@ -36,28 +41,6 @@ ul{
 svg{
   font-size: 52px;
 }
-.home{
-  background-color: #004A4A;
-}
-.skills{
-  background-color: #007D7D;
-  /* background-color: #deb460; */
-}
-.github{
-  background-color: #00B0B0;
-  /* background-color: hsl(0, 0%, 0%);  */
-}
-.linkedin{
-  background-color: #00254A;
-  /* background-color:hsl(164, 100%, 21%); */
-}
-.resume{
-    background-color: #272c77;
-  /* background-color: #004284; */
-  /* background-color: #4A0000; */
-  /* background-color: #833e3e; */
-}
-
 .menu{
   color:white;
 }
@@ -66,8 +49,14 @@ svg{
   display: none;
   z-index:10;
   width:100%;
-  /* background-color: #000; */
   background-color: rgba(74, 0, 0, 0.8);
+}
+.mobilemenucolorchange{
+    position: fixed;
+      display: none;
+      z-index: 10;
+      width: 100%;
+      background-color: rgba(0, 125, 125,0.8);
 }
 .hidden{
   display: none;
@@ -82,7 +71,6 @@ svg{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: black; */
   background-color: rgba(74, 0, 0,0.9);
 }
 .mobilecontent .mobileicon{
@@ -99,40 +87,18 @@ svg{
 }
 
  @media screen and (max-width:700px) and (max-height:950px) {
-/* .sideicons {
-    width: 130px;
-    padding: 5px 10px 5px 20px;
-  }
-  svg{
-    font-size: 30px;
-  } */
   .sideicons{
+    display: none;
+  }
+  .sideiconsbackgroundchange{
     display: none;
   }
 .mobilemenu{
   color:white;
-  /* z-index: 1; */
   display: block;
   }
+  .mobilemenucolorchange{
+    color: white;
+    display: block;
+  }
  }
- /* FOLD PHONE */
- /* @media screen and (max-width:500px) and (max-height:750px) {
-.sideicons {
-    width: 130px;
-    padding: 5px 10px 5px 20px;
-  }
-
-  svg {
-    font-size: 30px;
-  }
-  .mobilemenu{
-    display: block;
-    color:white;
-  }
-  .mobilecontent{
-    display: block;
-  }
-  .sidebar{
-    display: none;
-  }
- } */

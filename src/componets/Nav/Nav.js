@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
 import { BiMenu, BiLibrary} from 'react-icons/bi';
 import { FaHome, FaTimes } from 'react-icons/fa';
@@ -13,26 +13,38 @@ import './Nav.css';
 export const Nav = () => {
     const[menu, setMenu] = useState(false);
     const handleClick =()=>setMenu(!menu);
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground = () => {
+            if (window.scrollY  >= 190 ) {
+                setNavbar(true);
+            } else {
+                setNavbar(false);
+            }
+        }
+        
+window.addEventListener('scroll', changeBackground)
+
     return(
         <> 
         <IconContext.Provider value={{ color: "white", className: "" }}>
             <div className='sidebar'>
                 <ul > 
-                    <li className='sideicons home'>
+                        <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'}>
                         <Link 
                              smooth to="#home"
                              className='sideicon'>
                        HOME <FaHome />
                     </Link>
                     </li>
-                    <li className='sideicons skills'>
+                        <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'} >
                         <Link 
                              smooth to="#skills"
                              className='sideicon'>
                        SKILLS <BiLibrary />
                     </Link>
                     </li>
-                    <li className='sideicons github'>
+                        <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'}>
                     <a 
                         href="https://github.com/2peagles" 
                         target="_blank"
@@ -41,7 +53,7 @@ export const Nav = () => {
                          GITHUB <BsGithub />
                     </a>
                     </li>
-                    <li className='sideicons linkedin'>
+                        <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'}>
                         <a
                         href="https://www.linkedin.com/in/precious-bey-b31177220/"
                         target="_blank"
@@ -50,7 +62,7 @@ export const Nav = () => {
                          LINKEDIN <GrLinkedin />
                         </a>
                     </li>
-                    <li className='sideicons resume'>
+                        <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'}>
                     <a 
                         href={Resume}
                          rel="noreferrer" 
@@ -62,7 +74,8 @@ export const Nav = () => {
                 </ul>
             </div>
             </IconContext.Provider>
-            <div onClick={handleClick} className='mobilemenu'>
+
+            <div onClick={handleClick}  className={navbar ? 'mobilemenucolorchange' : 'mobilemenu'}>
                 {!menu ? <BiMenu  /> : <FaTimes /> }
             </div>
 
