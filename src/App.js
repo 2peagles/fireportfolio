@@ -32,7 +32,7 @@ function App () {
         loaded={particlesLoaded}
         options={{
           background: {
-            image:"radial-gradient(#4a0000, #000)"
+            image:"radial-gradient(#007d7d, #000)"
           },
           // fullScreen:{
           //   enable:false
@@ -62,7 +62,8 @@ function App () {
           },
           particles: {
             color: {
-              value: ["#fdcf58", "#757676","#f27d0c", "800909", "#f07f13"]
+              value:["004D4D", "051E56","309D9D","FFC44F","4263AE"]
+              // value: ["#fdcf58", "#757676","#f27d0c", "800909", "#f07f13"]
             },
             preset: "fire",
             // links: {

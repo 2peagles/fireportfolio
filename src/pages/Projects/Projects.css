@@ -20,11 +20,10 @@
     display: flex;
     display: inline-block;
     border:5px solid white;
-    background-color: rgb(0, 125, 125);
+    background-color: rgba(0, 125, 125,0.8);
     /* background-color: #608ade; */
-    box-shadow: 5px 10px 5px rgba(0,125,125, 0.3);
-    /* background-color: black; */
-    /* background-color: rgba(0,0,0,0.4); */
+    box-shadow: 5px 10px 5px #007d7d4d;
+    /* background-color: #4a0000; */
 }
 /* 2border && || 0.8  */
 img{
@@ -62,8 +61,7 @@ p{
  }
 
  .liveview:hover{
-
-    box-shadow: 5px 10px ;
+    box-shadow: 5px 10px;
  }
 .parent:hover .ribbon{
     visibility: visible;
