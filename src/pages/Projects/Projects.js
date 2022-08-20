@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoLogoGithub } from 'react-icons/go';
-import about from '../../Images/about.png';
+import cake from '../../Images/cake.png';
 import peagles from '../../Images/peagles.png';
 import ecom from '../../Images/ecom.png'
 import './Projects.css';
@@ -52,7 +52,7 @@ export const Projects = () => {
         <div className=' ribbon'><a href="https://github.com/2peagles/cupcake" target="_blank" rel="noreferrer">
               <GoLogoGithub className='ribbonlogo'/></a></div>
           <div className='projectcontentcontainer'>
-            <img src={about} alt=" Face Recognition App Login Page" />
+            <img src={cake} alt=" Face Recognition App Login Page" />
              <h1>Cupcake</h1>
                 <p><b> FRONT END REACT APP </b> 
                     Showcasing a cake shop. Has a video on the 
