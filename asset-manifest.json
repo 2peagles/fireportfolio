@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/fireportfolio/static/css/main.379ee5d7.css",
-    "main.js": "/fireportfolio/static/js/main.aaa311ba.js",
+    "main.css": "/fireportfolio/static/css/main.66d14d0c.css",
+    "main.js": "/fireportfolio/static/js/main.e37f0833.js",
     "static/media/peagles.png": "/fireportfolio/static/media/peagles.61acc686cd2832f78c97.png",
-    "static/media/cake.png": "/fireportfolio/static/media/cake.67f07bec096c4949f863.png",
-    "static/media/ecom.png": "/fireportfolio/static/media/ecom.4fb6759b546789a4a2b2.png",
+    "static/media/clipboard.png": "/fireportfolio/static/media/clipboard.85589ccc3b1b0118fbcd.png",
+    "static/media/sunnyside.png": "/fireportfolio/static/media/sunnyside.88b28de50215cee6c85c.png",
     "static/media/Resume .pdf": "/fireportfolio/static/media/Resume .8a48d51ee8b8ab079b44.pdf",
     "index.html": "/fireportfolio/index.html",
-    "main.379ee5d7.css.map": "/fireportfolio/static/css/main.379ee5d7.css.map",
-    "main.aaa311ba.js.map": "/fireportfolio/static/js/main.aaa311ba.js.map"
+    "main.66d14d0c.css.map": "/fireportfolio/static/css/main.66d14d0c.css.map",
+    "main.e37f0833.js.map": "/fireportfolio/static/js/main.e37f0833.js.map"
   },
   "entrypoints": [
-    "static/css/main.379ee5d7.css",
-    "static/js/main.aaa311ba.js"
+    "static/css/main.66d14d0c.css",
+    "static/js/main.e37f0833.js"
   ]
 }
