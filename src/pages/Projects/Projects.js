@@ -1,8 +1,10 @@
 import React from 'react';
 import { GoLogoGithub } from 'react-icons/go';
-import cake from '../../Images/cake.png';
+// import cake from '../../Images/cake.png';
 import peagles from '../../Images/peagles.png';
-import ecom from '../../Images/ecom.png'
+// import ecom from '../../Images/ecom.png';
+import sunnyside from '../../Images/sunnyside.png';
+import clipboard from '../../Images/clipboard.png';
 import './Projects.css';
 
 export const Projects = () => {
@@ -13,17 +15,17 @@ export const Projects = () => {
         <div className='projectcontainer parent'>
             <div className=' ribbon'><a href="https://github.com/2peagles/materials" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <div className='projectcontentcontainer '>
-            <img src={ecom} alt=" Eccomerce Login Page" />
-            <h1> Eccomerce</h1>
+            <img src={sunnyside} alt=" Eccomerce Login Page" />
+            <h1> Sunyside Landing Page</h1>
             <p><b> FRONT END REACT APP </b>
-              Static Eccomerce app, with bright colors. 
-              made with material ui, with commerce.js 
-              and stripe ready to be installed.
+              This Frontend Mentor challenge was a perfect test on my layout and responsive skills. There's a tiny bit of JS for 
+              the mobile menu, but the focus was on HTML & CSS. It has mobile and desktop layout view. A 
+              README file is also included. 
             </p>
-            <ul>
-              <li>react (framework)</li>
-              <li>Material UI</li>
-            </ul>
+            {/* <ul>
+              <li>react </li>
+              <li>bootstrap</li>
+            </ul> */}
            <button className='liveview'> <a href='https://62d323e7a9a7384c553358c6--resilient-dolphin-e1c9c0.netlify.app/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
         </div>
         </div>
@@ -52,20 +54,16 @@ export const Projects = () => {
         <div className=' ribbon'><a href="https://github.com/2peagles/cupcake" target="_blank" rel="noreferrer">
               <GoLogoGithub className='ribbonlogo'/></a></div>
           <div className='projectcontentcontainer'>
-            <img src={cake} alt=" Face Recognition App Login Page" />
-             <h1>Cupcake</h1>
+            <img src={clipboard} alt=" Face Recognition App Login Page" />
+             <h1>Clipboard Landing Page</h1>
                 <p><b> FRONT END REACT APP </b> 
-                    Showcasing a cake shop. Has a video on the 
-                    home page which does render right away, but does work.
-                    As an about, producct and contact page using react router.
-                 <ul>
+                This Frontend Mentor Junior Challenge put my layout skills to the test with HTML & CSS. 
+                It has a design for mobile and desktop layout view.
+                 {/* <ul>
                      <li>react </li>
-                     <li>tacyhons</li>
-                   </ul>
+                   </ul> */}
                   </p>
                 <button className='liveview'> <a href='https://2peagles.github.io/cupcake/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
-                  {/* <button className=' projectbtn livebtn'>Live view</button>
-                  <button className='projectbtn'><a href='/' className='gitrepo'><GoLogoGithub /></a></button> */}
              </div>
           </div>
         </div>

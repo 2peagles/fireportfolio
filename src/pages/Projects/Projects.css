@@ -53,7 +53,7 @@ p{
     margin-top:20px;
  }
  .liveview{
-    margin:0px;
+    margin:10px 0;
     display: flex;
     align-items: left;
     justify-content: left;
