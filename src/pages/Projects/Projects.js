@@ -13,7 +13,7 @@ export const Projects = () => {
       <div className='projectsdiv'>
         {/* <Link smooth to="#home"> Projects</Link> */}
         <div className='projectcontainer parent'>
-            <div className=' ribbon'><a href="https://github.com/2peagles/materials" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
+          <div className=' ribbon'><a href="https://eloquent-cannoli-31bcd7.netlify.app/" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <div className='projectcontentcontainer '>
             <img src={sunnyside} alt=" Eccomerce Login Page" />
             <h1> Sunyside Landing Page</h1>
@@ -51,7 +51,7 @@ export const Projects = () => {
         </div>
         <div className='projectcontainer parent'>
         <div className='projectcontentcontainer '>
-        <div className=' ribbon'><a href="https://github.com/2peagles/cupcake" target="_blank" rel="noreferrer">
+            <div className=' ribbon'><a href="https://631e3cb60c688b0008308839--jocular-lebkuchen-585975.netlify.app/" target="_blank" rel="noreferrer">
               <GoLogoGithub className='ribbonlogo'/></a></div>
           <div className='projectcontentcontainer'>
             <img src={clipboard} alt=" Face Recognition App Login Page" />
