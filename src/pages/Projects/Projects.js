@@ -13,7 +13,7 @@ export const Projects = () => {
       <div className='projectsdiv'>
         {/* <Link smooth to="#home"> Projects</Link> */}
         <div className='projectcontainer parent'>
-          <div className=' ribbon'><a href="https://eloquent-cannoli-31bcd7.netlify.app/" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
+          <div className=' ribbon'><a href="https://github.com/2peagles/SunnySide" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <div className='projectcontentcontainer '>
             <img src={sunnyside} alt=" Eccomerce Login Page" />
             <h1> Sunyside Landing Page</h1>
@@ -26,7 +26,7 @@ export const Projects = () => {
               <li>react </li>
               <li>bootstrap</li>
             </ul> */}
-           <button className='liveview'> <a href='https://62d323e7a9a7384c553358c6--resilient-dolphin-e1c9c0.netlify.app/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
+           <button className='liveview'> <a href='https://eloquent-cannoli-31bcd7.netlify.app/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
         </div>
         </div>
         <div className='projectcontainer parent'>
@@ -51,7 +51,7 @@ export const Projects = () => {
         </div>
         <div className='projectcontainer parent'>
         <div className='projectcontentcontainer '>
-            <div className=' ribbon'><a href="https://631e3cb60c688b0008308839--jocular-lebkuchen-585975.netlify.app/" target="_blank" rel="noreferrer">
+            <div className=' ribbon'><a href="https://github.com/2peagles/Clipboard-Landing-page" target="_blank" rel="noreferrer">
               <GoLogoGithub className='ribbonlogo'/></a></div>
           <div className='projectcontentcontainer'>
             <img src={clipboard} alt=" Face Recognition App Login Page" />
@@ -63,7 +63,7 @@ export const Projects = () => {
                      <li>react </li>
                    </ul> */}
                   </p>
-                <button className='liveview'> <a href='https://2peagles.github.io/cupcake/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
+                <button className='liveview'> <a href='https://631e3cb60c688b0008308839--jocular-lebkuchen-585975.netlify.app/'  target="_blank" rel="noreferrer" ><b>LIve View</b></a></button>
              </div>
           </div>
         </div>
