@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/fireportfolio/static/css/main.66d14d0c.css",
-    "main.js": "/fireportfolio/static/js/main.9ad525e1.js",
+    "main.js": "/fireportfolio/static/js/main.55408189.js",
     "static/media/peagles.png": "/fireportfolio/static/media/peagles.61acc686cd2832f78c97.png",
     "static/media/clipboard.png": "/fireportfolio/static/media/clipboard.85589ccc3b1b0118fbcd.png",
     "static/media/sunnyside.png": "/fireportfolio/static/media/sunnyside.88b28de50215cee6c85c.png",
+    "static/media/ResumeNew.pdf": "/fireportfolio/static/media/ResumeNew.84559f8ca32d69ffc701.pdf",
     "static/media/Resume .pdf": "/fireportfolio/static/media/Resume .8a48d51ee8b8ab079b44.pdf",
     "index.html": "/fireportfolio/index.html",
     "main.66d14d0c.css.map": "/fireportfolio/static/css/main.66d14d0c.css.map",
-    "main.9ad525e1.js.map": "/fireportfolio/static/js/main.9ad525e1.js.map"
+    "main.55408189.js.map": "/fireportfolio/static/js/main.55408189.js.map"
   },
   "entrypoints": [
     "static/css/main.66d14d0c.css",
-    "static/js/main.9ad525e1.js"
+    "static/js/main.55408189.js"
   ]
 }
