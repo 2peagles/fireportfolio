@@ -6,7 +6,7 @@ import 'react-slideshow-image/dist/styles.css';
 // import peagles from '../../Images/peagles.png';
 // import sunnyside from '../../Images/sunnyside.png';
 // import clipboard from '../../Images/clipboard.png';
-// import './Projects.css';
+import './Projects.css';
 
 const slideImages = [
   {
@@ -21,13 +21,13 @@ const slideImages = [
 ]
 export const Projects = () => {
   return (
-    <div id='projects' style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+    <div id='projects'>
       {/* <div className='projectsdiv'> */}
-      <div className='slide-container' style={{width:'800px'.}}>
+      <div className='slide-container' style={{width:'800px'}}>
         <Slide>
             {slideImages.map((slideImage, index)=>(
-              <div className='each-slide' key={index}>
-                  <img src={slideImage.url} alt={slideImage.caption} height='500px'/>
+              <div className='each-slide' key={index} style={{background:`(${slideImage.url})`}}>
+                  {/* <img src={slideImage.url} alt={slideImage.caption} height='500px'/> */}
               </div>
             ))}
           </Slide>

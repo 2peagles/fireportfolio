@@ -12,7 +12,7 @@
 }
 #home,
 button {
-    border-radius: .5rem;
+    border-radius: .2rem;
     text-transform: uppercase;
 }
 #home button:hover{
