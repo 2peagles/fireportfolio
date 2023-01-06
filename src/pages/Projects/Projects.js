@@ -12,22 +12,29 @@ const slideImages = [
   {
     url:'https://images.unsplash.com/photo-1520262389826-d559a9aca921?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     // src:'../../Images/sunnyside.png',
-    caption:'slide 1'
+    captiontitle:'easybank',
+    captiondescription:'lorem..'
   },
   {
     url: 'https://pbs.twimg.com/media/DK-7M2OXoAA97LV.jpg:large',
-    caption: 'slide 2'
+    captiontitle: 'sunnyside',
+    captiondescription: 'lorem..'
   },
 ]
 export const Projects = () => {
   return (
     <div id='projects'>
       {/* <div className='projectsdiv'> */}
-      <div className='slide-container' style={{width:'800px'}}>
+      <div className='slide-container' >
         <Slide>
             {slideImages.map((slideImage, index)=>(
               <div className='each-slide' key={index} style={{background:`(${slideImage.url})`}}>
-                  {/* <img src={slideImage.url} alt={slideImage.caption} height='500px'/> */}
+                  <div className='caption_container'>
+                    <div className='caption_items'>
+                      <span>{slideImage.captiontitle}</span>
+                      <span><p>{slideImage.captiondescription}</p></span>
+                    </div>
+                  </div>
               </div>
             ))}
           </Slide>
