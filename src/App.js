@@ -32,7 +32,9 @@ function App () {
         loaded={particlesLoaded}
         options={{
           background: {
-            image:"radial-gradient(#007d7d, #000)"
+            // image:"radial-gradient(#007d7d, #000)"
+            image:" radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)"
+            // image:"linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)"
           },
           // fullScreen:{
           //   enable:false
@@ -62,8 +64,8 @@ function App () {
           },
           particles: {
             color: {
-              value:["004D4D", "051E56","309D9D","FFC44F","4263AE"]
-              // value: ["#fdcf58", "#757676","#f27d0c", "800909", "#f07f13"]
+              // value:["004D4D", "051E56","309D9D","FFC44F","4263AE"]
+              value:["fff"]
             },
             preset: "fire",
             // links: {

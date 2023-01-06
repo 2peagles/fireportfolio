@@ -1,3 +1,4 @@
+
 ul{
   margin:0;
   padding:0;
@@ -25,7 +26,9 @@ ul{
       width: 160px;
       height: 60px;
       padding: 10px 20px;
-    background-color: rgba(0, 125, 125, 0.9);
+    /* background-color: rgba(0, 125, 125, 0.9); */
+    /* background-color:#487BB8; */
+    background-color: rgba(107, 155, 213, .7);
 }
 .sideicons:hover, .sideiconsbackgroundchange:hover{
   margin-left:-10px;
@@ -56,37 +59,49 @@ svg{
       display: none;
       z-index: 10;
       width: 100%;
-      background-color: rgba(0, 125, 125,0.8);
+      /* background-color: rgba(0, 125, 125,0.8); */
+    background-color:rgba(224, 133, 173,.7);
+    backdrop-filter: blur(2rem);
 }
 .hidden{
   display: none;
 }
 .mobilecontent {
   min-height: 100vh;
-  width: 100vw;
+  width: 40vw;
   z-index: 7;
   display: block;
   color: white;
   position: fixed;
   display: flex;
+  text-align: left;
   align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 125, 125,0.9);
+  justify-content:flex-start;
+  backdrop-filter: blur(1rem);
+  background-color:rgba(224, 133, 173,.7);
+  /* background-color: rgba(0, 125, 125,0.9); */
 }
 .mobilecontent .mobileicon{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 }
  .mobileicon .mobileicons{
     z-index: 11;
     color:white;
-    margin:5px 10px;
-    font-size: 42px;
+    margin:5px;
+    font-size: 2rem;
     display: block;
+    text-align: left;
 }
-
- @media screen and (max-width:700px) and (max-height:950px) {
+.mobileicon:hover:focus {
+    width:100%;
+    transition: .6s;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(153deg, rgba(194, 218, 247, 0.9932279909706546) 43%, rgba(107, 155, 213, 1) 100%);
+    border-image-slice: 1;
+  }
+ @media screen and (width < 800px) {
   .sideicons{
     display: none;
   }

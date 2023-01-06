@@ -8,10 +8,15 @@
     justify-content: center;
     /* position: relative; */
     color:#fff;
+    /* color:#E085AD; */
 }
 #home,
 button {
+    border-radius: .5rem;
     text-transform: uppercase;
+}
+#home button:hover{
+    background-color: #E085AD;
 }
 #homecontainer{
     /* position: absolute; */
@@ -33,11 +38,12 @@ a{
     text-decoration: none;
 }
 button{
-    margin:10px;
-    padding:10px;
+    margin:1rem;
+    padding:.7rem 1.5rem;
     border: none;
     background-color: #fff;
 }
+
 .contacticon{
     font-size:4rem;
 }

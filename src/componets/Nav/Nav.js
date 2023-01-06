@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
-import { BiMenu, BiLibrary} from 'react-icons/bi';                  
+import { BiMenu, BiLibrary} from 'react-icons/bi';    
 import { FaHome, FaTimes } from 'react-icons/fa';
 import { RiFilePaper2Fill } from 'react-icons/ri';
 import { GrLinkedin } from 'react-icons/gr';
