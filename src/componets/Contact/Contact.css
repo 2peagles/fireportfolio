@@ -31,7 +31,7 @@ input::placeholder{
 .top-btn-style{
     height:30px;
     width:30px;
-    color:#007D7D;
+    color:rgb(107, 155, 213);
     cursor: pointer;
     background-color: transparent;
 }

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
-import { BiMenu, BiLibrary} from 'react-icons/bi';
+import { BiMenu, BiLibrary} from 'react-icons/bi';    
 import { FaHome, FaTimes } from 'react-icons/fa';
 import { RiFilePaper2Fill } from 'react-icons/ri';
 import { GrLinkedin } from 'react-icons/gr';
 import { IconContext } from "react-icons";
 import { HashLink as Link } from 'react-router-hash-link';
-import Resume from '../../Images/Resume .pdf';
+// import Resume from '../../Images/Resume .pdf';
+import ResumeNew from '../../Images/ResumeNew.pdf';
 import './Nav.css';
 
 
@@ -64,7 +65,7 @@ window.addEventListener('scroll', changeBackground)
                     </li>
                         <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'}>
                     <a 
-                        href={Resume}
+                        href={ResumeNew}
                          rel="noreferrer" 
                          target="_blank" 
                         className='sideicon'>
@@ -123,7 +124,7 @@ window.addEventListener('scroll', changeBackground)
                     </li>
                     <li className='mobileicon'>
                         <a
-                            href={Resume}
+                            href={ResumeNew}
                             rel="noreferrer"
                             target="_blank"
                             className='mobileicons'>
