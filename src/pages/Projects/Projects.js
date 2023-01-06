@@ -1,8 +1,6 @@
 import React from 'react';
 import { GoLogoGithub } from 'react-icons/go';
-// import cake from '../../Images/cake.png';
 import peagles from '../../Images/peagles.png';
-// import ecom from '../../Images/ecom.png';
 import sunnyside from '../../Images/sunnyside.png';
 import clipboard from '../../Images/clipboard.png';
 import './Projects.css';
