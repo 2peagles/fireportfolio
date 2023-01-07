@@ -67,7 +67,7 @@ svg{
 }
 .mobilecontent {
   min-height: 100vh;
-  width: 40vw;
+  width: 50vw;
   z-index: 100;
   display: block;
   color: white;
@@ -89,7 +89,8 @@ svg{
     z-index: 11;
     color:white;
     margin:5px;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: calc(25px + 6 * ((100vw - 320px) / 680));
     display: block;
     text-align: left;
 }

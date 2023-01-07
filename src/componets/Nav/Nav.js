@@ -6,8 +6,7 @@ import { RiFilePaper2Fill } from 'react-icons/ri';
 import { GrLinkedin } from 'react-icons/gr';
 import { IconContext } from "react-icons";
 import { HashLink as Link } from 'react-router-hash-link';
-// import Resume from '../../Images/Resume .pdf';
-import ResumeNew from '../../Images/ResumeNew.pdf';
+import PreciousResume from '../../Images/PreciousResume.pdf';
 import './Nav.css';
 
 
@@ -65,7 +64,7 @@ window.addEventListener('scroll', changeBackground)
                     </li>
                         <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'}>
                     <a 
-                        href={ResumeNew}
+                        href={PreciousResume}
                          rel="noreferrer" 
                          target="_blank" 
                         className='sideicon'>
@@ -124,7 +123,7 @@ window.addEventListener('scroll', changeBackground)
                     </li>
                     <li className='mobileicon'>
                         <a
-                            href={ResumeNew}
+                            href={PreciousResume}
                             rel="noreferrer"
                             target="_blank"
                             className='mobileicons'>

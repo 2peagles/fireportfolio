@@ -39,7 +39,7 @@
     height: 100%;
     width:100%;
     display: flex;
-    background-color: rgba(107, 155, 213, 0.5);
+    background-color: rgba(107, 155, 213, 0.8);
     backdrop-filter: blur(.4rem);
 }
 /* .each-slide:hover .caption_container {
@@ -58,19 +58,17 @@
    align-items:center;
    justify-content: center;
 }
-.btngroupproject{
-    display: flex;
-    /* border:1px solid black; */
+.caption_items {
+    font-size:.8rem;
+    width:66%;
 }
-/* .btngroupproject button:not(.bottombtn){
-    font-size: 1rem;
-} */
-.btngroupproject button {
-    max-width: 250px; 
-    margin:.5rem ;
-    border-style: solid;
-    background-color: transparent;
-    /* font-size: calc(18px + 6 * ((100vw - 320px) / 680)); */
+.slidebtn{
+    padding: .5rem ;
+        outline:2px solid black;
+        background-color: transparent;
+}
+.slidebtn:hover, .slidebtn:focus{
+    flex-grow: 1;
 }
 .about_section{
     padding:0 1.5rem;
@@ -87,6 +85,13 @@
     .project_container {
             display: flex;
             width:70%;
+        }
+        .slidebtn{
+            margin:0 .5rem;
+            width:100px;
+        }
+        .slidebtn a{
+            font-size: .9rem;
         }
 }
 /* FOLD PHONE */
