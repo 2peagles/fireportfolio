@@ -25,7 +25,7 @@ input::placeholder{
 .top-btn-position{
     position:fixed;
     bottom:7%;
-    right:5%;
+    right:3%;
     z-index: 2;
 }
 .top-btn-style{

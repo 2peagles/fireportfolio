@@ -13,31 +13,66 @@ const slideImages = [
     url:'https://images.unsplash.com/photo-1520262389826-d559a9aca921?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     // src:'../../Images/sunnyside.png',
     captiontitle:'easybank',
-    captiondescription:'lorem..'
+    captiondescription:'lorem..',
+    livesitelink:'https://main--precious-semifreddo-5c681f.netlify.app/',
+    githublink:'https://github.com/2peagles/easybank',
   },
   {
-    url: 'https://pbs.twimg.com/media/DK-7M2OXoAA97LV.jpg:large',
+    url: 'https://i.postimg.cc/SNSbjmNk/Screenshot-2023-01-06-5-16-19-PM.png',
     captiontitle: 'sunnyside',
-    captiondescription: 'lorem..'
+    captiondescription: 'lorem..',
+    livesitelink: 'https://eloquent-cannoli-31bcd7.netlify.app/',
+    githublink: 'https://github.com/2peagles/SunnySide',
+  },
+  {
+    url: 'https://i.postimg.cc/SNSbjmNk/Screenshot-2023-01-06-5-16-19-PM.png',
+    captiontitle: 'loopstudios',
+    captiondescription: 'lorem..',
+    livesitelink: 'https://jade-twilight-3bf9e4.netlify.app/',
+    githublink: 'https://github.com/2peagles/loopstudios',
+  },
+  {
+    url: 'https://i.postimg.cc/SNSbjmNk/Screenshot-2023-01-06-5-16-19-PM.png',
+    captiontitle: 'shortly',
+    captiondescription: 'lorem..',
+    livesitelink: 'https://main--starlit-manatee-c4b578.netlify.app/',
+    githublink: 'https://github.com/2peagles/shorten-link',
   },
 ]
 export const Projects = () => {
   return (
     <div id='projects'>
+      <div className='project_container'>
       {/* <div className='projectsdiv'> */}
       <div className='slide-container' >
         <Slide>
             {slideImages.map((slideImage, index)=>(
-              <div className='each-slide' key={index} style={{background:`(${slideImage.url})`}}>
+              <div className='each-slide' key={index} style={{backgroundImage:`url(${slideImage.url})`}}>
                   <div className='caption_container'>
                     <div className='caption_items'>
                       <span>{slideImage.captiontitle}</span>
                       <span><p>{slideImage.captiondescription}</p></span>
+                      <div className='btngroupproject'>
+                      <button className='topbtn'><a href={slideImage.livesitelink} target="_blank" rel="noreferrer">live view</a></button>
+                      <button className='bottombtn'><a href={slideImage.githublink} target='_blank' rel='noreferrer'>github</a></button>
+                      </div>
                     </div>
                   </div>
               </div>
             ))}
           </Slide>
+      </div>
+      <section className='about_section'>
+        <h2>about me</h2>
+          <p>
+            Hello there, my name is Precious and I’m an aspiring front end developer! 
+            Since I started coding almost a year ago, I have learned so much. Having learned so much,
+             I have so much more of an appreciation for web applications now. There's always something 
+             new to learn. I started doing frontend mentor challenges and I really like them. I'm considering
+              getting the premium version, but for now, using my eye judgment is fine with me.
+
+        </p>
+      </section>
       </div>
         {/* <Link smooth to="#home"> Projects</Link> */}
         {/* <div className='projectcontainer parent'>
