@@ -4,3 +4,4 @@ So I decided to make my sidebar to be the same color so it's more cohesive I cha
 I had a ton of fun building this and I hope it looks good to other people, either way I'm proud of myself.
 
 I was about to create my project links through here https://postimages.org/
+background wave image https://getwaves.io/
