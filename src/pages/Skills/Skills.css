@@ -2,8 +2,8 @@
     min-height: 100vh;
     width: 100vw;
     color:white;
-    position: absolute;
-    /* position: relative; */
+    /* position: absolute; */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,8 +19,8 @@
 
 .skillcontainer {
     position: relative;
-    width: 24em;
-    height: 24em;
+    width: 10em;
+    height: 10em;
     padding: 2.8em;
     /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
     /* border: dashed 1px; */
