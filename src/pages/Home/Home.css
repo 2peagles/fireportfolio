@@ -8,7 +8,6 @@
     justify-content: center;
     /* position: relative; */
     color:#fff;
-    /* color:#E085AD; */
 }
 #home,
 button {
@@ -81,7 +80,10 @@ button{
 }
 
 /* TABLETS */
-@media screen and (min-width:700px) and ( min-height:900px){
+@media (width < 700px){
+    #home{
+        margin:0 0 3rem;
+    }
     .homeheader{
         font-size: calc(50px + 6 * ((100vw - 320px) / 680));
     }

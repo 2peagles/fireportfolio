@@ -1,8 +1,8 @@
 #skills{
-    min-height: 100vh;
+    height:fit-content;
+    padding:4rem 0  ;
     width: 100vw;
     color:white;
-    /* position: absolute; */
     position: relative;
     display: flex;
     align-items: center;
@@ -19,8 +19,8 @@
 
 .skillcontainer {
     position: relative;
-    width: 10em;
-    height: 10em;
+    width: 20em;
+    height: 30em;
     padding: 2.8em;
     /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
     /* border: dashed 1px; */
@@ -30,25 +30,26 @@
 .skillcontainer li {
     display: block;
     position: absolute;
-    top: 50%; left: 50%;
-    width: 2em; height: 2em;
+    top: 70%; left: 50%;
+    width: 1em; height: 2em;
     margin: -2em;
 }
 .circle-container skillicons { display: block; width: 100%; }
-.deg0 { transform: translate(7em); } /* 12em = half the width of the wrapper */
-.deg45 { transform: rotate(45deg) translate(7em) rotate(-45deg); }
-.deg135 { transform: rotate(135deg) translate(7em) rotate(-135deg); }
-.deg180 { transform: translate(-7em); }
-.deg225 { transform: rotate(225deg) translate(7em) rotate(-225deg); }
-.deg315 { transform: rotate(315deg) translate(7em) rotate(-315deg); }
-.deg315 { transform: rotate(315deg) translate(7em) rotate(-315deg); }
+.deg0 { transform: translate(5em); } /* 12em = half the width of the wrapper */
+.deg45 { transform: rotate(45deg) translate(5em) rotate(-45deg); }
+.deg135 { transform: rotate(135deg) translate(5em) rotate(-135deg); }
+.deg180 { transform: translate(-5em); }
+.deg225 { transform: rotate(225deg) translate(5em) rotate(-225deg); }
+.deg315 { transform: rotate(315deg) translate(5em) rotate(-315deg); }
+.deg315 { transform: rotate(315deg) translate(5em) rotate(-315deg); }
 .mobile-skills-container{
     display: none;
 }
 .mobile-skills-container li{
     list-style-type: none;
 }
-@media screen and (max-width:700px) and (max-height:950px) {
+/* (max-width:700px) and (max-height:950px) */
+@media (width < 650px) {
 .skillcontainer {
     display: none;
     }
@@ -57,7 +58,7 @@
         margin:10px 50px;
     }
  }
-@media screen and (max-width:900px){
+/* @media screen and (max-width:900px){
     .skillcontainer {
         display: none;
         }
@@ -65,4 +66,4 @@
         display: inline-block;
         margin:10px 50px;
     }
-}
+} */
