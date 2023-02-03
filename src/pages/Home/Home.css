@@ -11,7 +11,11 @@
 }
 #home,
 button {
+    border-radius: .2rem;
     text-transform: uppercase;
+}
+#home button:hover{
+    background-color: #E085AD;
 }
 #homecontainer{
     /* position: absolute; */
@@ -33,11 +37,12 @@ a{
     text-decoration: none;
 }
 button{
-    margin:10px;
-    padding:10px;
+    margin:1rem;
+    padding:.7rem 1.5rem;
     border: none;
     background-color: #fff;
 }
+
 .contacticon{
     font-size:4rem;
 }
@@ -75,7 +80,10 @@ button{
 }
 
 /* TABLETS */
-@media screen and (min-width:700px) and ( min-height:900px){
+@media (width < 700px){
+    #home{
+        margin:0 0 3rem;
+    }
     .homeheader{
         font-size: calc(50px + 6 * ((100vw - 320px) / 680));
     }

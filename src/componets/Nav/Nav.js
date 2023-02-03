@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { BsGithub } from 'react-icons/bs';
-import { BiMenu, BiLibrary} from 'react-icons/bi';
+import { BiMenu, BiLibrary} from 'react-icons/bi';    
 import { FaHome, FaTimes } from 'react-icons/fa';
 import { RiFilePaper2Fill } from 'react-icons/ri';
 import { GrLinkedin } from 'react-icons/gr';
 import { IconContext } from "react-icons";
 import { HashLink as Link } from 'react-router-hash-link';
-import Resume from '../../Images/Resume .pdf';
+import PreciousResume from '../../Images/PreciousResume.pdf';
 import './Nav.css';
 
 
@@ -16,7 +16,7 @@ export const Nav = () => {
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
-            if (window.scrollY  >= 190 ) {
+            if (window.scrollY  >= 90 ) {
                 setNavbar(true);
             } else {
                 setNavbar(false);
@@ -64,7 +64,7 @@ window.addEventListener('scroll', changeBackground)
                     </li>
                         <li className={navbar ? 'sideiconsbackgroundchange' : 'sideicons'}>
                     <a 
-                        href={Resume}
+                        href={PreciousResume}
                          rel="noreferrer" 
                          target="_blank" 
                         className='sideicon'>
@@ -123,7 +123,7 @@ window.addEventListener('scroll', changeBackground)
                     </li>
                     <li className='mobileicon'>
                         <a
-                            href={Resume}
+                            href={PreciousResume}
                             rel="noreferrer"
                             target="_blank"
                             className='mobileicons'>
