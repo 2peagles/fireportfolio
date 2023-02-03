@@ -15,7 +15,7 @@ export const Projects = () => {
         <div className='projectcontainer parent'>
             <div className=' ribbon'><a href="https://github.com/2peagles/materials" target="_blank" rel="noreferrer"><GoLogoGithub className='ribbonlogo' /></a></div>
             <div className='projectcontentcontainer '>
-            <img src={sunnyside} alt=" Eccomerce Login Page" />
+            <img src={sunnyside} alt=" project one sunnyside" />
             <h1> Sunyside Landing Page</h1>
             <p><b> FRONT END REACT APP </b>
               This Frontend Mentor challenge was a perfect test on my layout and responsive skills. There's a tiny bit of JS for 
