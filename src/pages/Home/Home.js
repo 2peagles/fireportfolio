@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import Resume from '../../Images/Resume .pdf';
+import PreciousResume from '../../Images/PreciousResume .pdf';
 import './Home.css';
 
 export const Home = () => {
@@ -13,7 +13,7 @@ export const Home = () => {
             </div>
             <div className='btngroup'>
                <button><Link smooth to="#projects"> Projects</Link></button>
-                <button><a href={Resume} rel="noreferrer" target="_blank">resume</a></button>
+                <button><a href={PreciousResume} rel="noreferrer" target="_blank">resume</a></button>
               </div>
           </div>
     </div>
